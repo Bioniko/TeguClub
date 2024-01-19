@@ -32,10 +32,9 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                       
-                        <li class="side-menu"><a href="#">
-						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;"></i>
-                            <span class="badge" id="badge"></span>
+                        <li class="side-menu"><a>
+						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;"></i>
+                            <span class="badge otro" id="badge"></span>
 					</a></li>
                     </ul>
                 </div>
@@ -43,7 +42,7 @@
             </div>
             <!-- Start Side Menu -->
             <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <a class="close-side"><i class="fa fa-times"></i></a>
                 <li class="cart-box">
                     <ul class="cart-list">
                         <ul class="cart-list" id="miLista">

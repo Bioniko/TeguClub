@@ -1477,7 +1477,26 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:
     }
 }
 
-.side-menu i.fa-shopping-bag {
+.side-menu i.fa-shopping-bag{
     animation: bounceAnimation 1s;
 }
+.otro{
+    animation: bounceAnimation 1s;
+}
+/* Agrega esto a tu archivo CSS */
+@keyframes jumpAnimation {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .jump {
+    animation: jumpAnimation 1s ease !important;
+  }
 

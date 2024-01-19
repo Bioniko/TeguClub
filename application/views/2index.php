@@ -116,10 +116,13 @@
                 TotalPagar();
                 numero.textContent = n;
             }
-            $('#carritoIcon').addClass('animated');
-            setTimeout(function() {
-                $('#carritoIcon').removeClass('animated');
-            }, 1000); // Duración de la animación en milisegundos
+            var carritoIcon = document.getElementById("carritoIcon");
+            carritoIcon.classList.toggle("jump");
+            numero.classList.toggle("jump");
+            setTimeout(function () {
+                carritoIcon.classList.remove("jump");
+                numero.classList.remove("jump");
+            }, 1000);
         }
 
 

@@ -56,8 +56,6 @@ class Empresa extends CI_Controller {
 			$crud->set_theme('flexigrid');
 			//TABLA A LEER
 			$crud->set_table('empresa');
-			//WHERE
-			$crud->where('emp_id', $_COOKIE['log_id']);
 			//CAMPOS A VISUALIZAR
 			if($_COOKIE['log_id'] == '2'){
 				$crud->add_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
@@ -66,6 +64,8 @@ class Empresa extends CI_Controller {
 				//COLUMNAS A MOSTRAR
 				$crud->columns('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
 			}else{
+				//WHERE
+				$crud->where('emp_id', $_COOKIE['log_id']);
 				$crud->add_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
     			$crud->edit_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
 				//COLUMNAS A MOSTRAR

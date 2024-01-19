@@ -49,10 +49,7 @@
     <script src="<?php echo base_url();?>estilos/js/bootsnav.js."></script>
     <script src="<?php echo base_url();?>estilos/js/images-loded.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/isotope.min.js"></script>
-    <script src="<?php echo base_url();?>estilos/js/owl.carousel.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/baguetteBox.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/form-validator.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/contact-form-script.js"></script>
     <script src="<?php echo base_url();?>estilos/js/custom.js"></script>
-    <script src="<?php echo base_url();?>estilos/owlcarousel/jquery.min.js"></script>
-    <script src="<?php echo base_url();?>estilos/owlcarousel/owl.carousel.min.js"></script>

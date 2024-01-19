@@ -22,7 +22,6 @@ $tiktok = $emp->emp_tiktok;
     <link rel="shortcut icon" href="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" type="image/x-icon">
     <link rel="apple-touch-icon" href="<?php echo base_url();?>estilos/images/apple-touch-icon.png">
     <!-- Agrega esto en el head de tu HTML -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Z2GEmUaXEnA8Ii8wIs5oTfIKlZxqg3FF/FkdFiU3uQzD4vTqOAgWTdOY9wH5z2QrC+14RPt8enlcyxUmR2Cvjg==" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?php echo base_url();?>estilos/css/bootstrap.min.css">
@@ -32,8 +31,6 @@ $tiktok = $emp->emp_tiktok;
     <link rel="stylesheet" href="<?php echo base_url();?>estilos/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php echo base_url();?>estilos/css/custom.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>estilos/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>estilos/owlcarousel/owl.theme.default.min.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -88,5 +85,4 @@ $tiktok = $emp->emp_tiktok;
       <!-- <img id="imagenAmpliada" style="padding-top: 80%;" class="item"> -->
       <span class="cerrar" onclick="cerrarImagenAmpliada()">&times;</span>
     </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Z2GEmUaXEnA8Ii8wIs5oTfIKlZxqg3FF/FkdFiU3uQzD4vTqOAgWTdOY9wH5z2QrC+14RPt8enlcyxUmR2Cvjg==" crossorigin="anonymous" />
 </head>

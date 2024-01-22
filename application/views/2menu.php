@@ -33,7 +33,7 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="side-menu"><a>
-						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;"></i>
+						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;cursor: pointer;"></i>
                             <span class="badge otro" id="badge"></span>
 					</a></li>
                     </ul>

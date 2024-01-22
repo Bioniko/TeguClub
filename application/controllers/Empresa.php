@@ -68,8 +68,8 @@ class Empresa extends CI_Controller {
 			}else{
 				//WHERE
 				$crud->where('emp_id', $_COOKIE['log_id']);
-				$crud->add_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
-    			$crud->edit_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
+				$crud->add_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
+    			$crud->edit_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
 				//COLUMNAS A MOSTRAR
 				$crud->columns('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
 			}

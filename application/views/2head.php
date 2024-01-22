@@ -4,6 +4,8 @@ $correo = $emp->emp_correo;
 $facebook = $emp->emp_facebook;
 $instagram =$emp->emp_instagram;
 $tiktok = $emp->emp_tiktok;
+$titulo = $emp->emp_titulo;
+$titulo2 = $emp->emp_titulo2;
 ?>
 <head>
     <meta charset="utf-8">

@@ -52,24 +52,26 @@ class Empresa extends CI_Controller {
 			$crud->display_as('emp_facebook','Facebook');
 			$crud->display_as('emp_instagram','Instagram');
 			$crud->display_as('emp_tiktok','Tiktok');
+			$crud->display_as('emp_titulo','Titulo');
+			$crud->display_as('emp_titulo2','Descripción pagina');
 			//THEME
 			$crud->set_theme('flexigrid');
 			//TABLA A LEER
 			$crud->set_table('empresa');
 			//CAMPOS A VISUALIZAR
 			if($_COOKIE['log_id'] == '2'){
-				$crud->add_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
-    			$crud->edit_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
+				$crud->add_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
+    			$crud->edit_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
 				$crud->set_relation('log_id','login','log_usuario');
 				//COLUMNAS A MOSTRAR
 				$crud->columns('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
 			}else{
 				//WHERE
 				$crud->where('emp_id', $_COOKIE['log_id']);
-				$crud->add_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
-    			$crud->edit_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
+				$crud->add_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
+    			$crud->edit_fields('emp_nombre','emp_celular','emp_correo','emp_logo','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
 				//COLUMNAS A MOSTRAR
-				$crud->columns('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok', 'emp_descripcion');
+				$crud->columns('emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
 			}
 			//SUBIR FOTO
 			$crud->set_field_upload('emp_logo','assets/uploads/files');

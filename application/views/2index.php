@@ -7,8 +7,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-all text-center">
-                        <h1>Realiza tus Pedidos</h1>
-                        <p>Explora las últimas colecciones de nuestros productos, tambien puedes personaliza a tu gusto.</p>
+                        <h1><?php echo $titulo; ?></h1>
+                        <p><?php echo $titulo2; ?></p>
                     </div>
                 </div>
             </div>

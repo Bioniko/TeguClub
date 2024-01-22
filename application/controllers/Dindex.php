@@ -35,7 +35,7 @@ class Dindex extends CI_Controller {
 				}
 			}
 			//===========================================================
-			$producto = 'SELECT * FROM producto p LEFT JOIN categoria c ON p.cat_id = c.cat_id WHERE p.emp_id = '.$_GET['emp'];
+			$producto = 'SELECT * FROM producto p LEFT JOIN categoria c ON p.cat_id = c.cat_id WHERE p.emp_id = '.$_GET['emp'].' ORDER BY p.pro_fecha ASC';
 			$categoria = 'SELECT * FROM categoria WHERE emp_id = '.$_GET['emp'];
 			$cat = $this->db->query($categoria)->result();
 			$pro = $this->db->query($producto)->result();

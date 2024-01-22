@@ -184,7 +184,7 @@
                 carrito.forEach(producto => {
                     var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
                     mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
-                    urlfactura += '&producto' + cont + '=' + $producto[1] + '&cantidad' + cont + '=' + producto[4];
+                    urlfactura += '&producto' + cont + '=' + producto[1] + '&cantidad' + cont + '=' + producto[4];
                     cont++;
                 });
                 urlfactura += '&total=' + total;

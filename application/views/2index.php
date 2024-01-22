@@ -179,7 +179,7 @@
             var cont = 1;
             var numeroWhatsApp = <?php echo $whatsapp; ?>;
             var mensajeInicial = '¡Hola! Quiero hacer un pedido:\n';
-            var urlfactura = '<?php echo base_url();?>index.php/Dpedido/Show?emp=<?php $get;?>';
+            var urlfactura = '<?php echo base_url();?>index.php/Dpedido/Show?emp=<?php echo $_GET['emp'];?>';
             if(carrito.length > 0){
                 carrito.forEach(producto => {
                     var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);

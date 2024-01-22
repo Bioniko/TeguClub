@@ -1,4 +1,5 @@
 <?php 
+$get = $_GET['emp'];
 $whatsapp = $emp->emp_celular;
 $correo = $emp->emp_correo;
 $facebook = $emp->emp_facebook;

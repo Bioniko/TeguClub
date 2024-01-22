@@ -176,14 +176,19 @@
         }
 
         function enviarPedidoPorWhatsApp() {
+            var cont = 1;
             var numeroWhatsApp = <?php echo $whatsapp; ?>;
             var mensajeInicial = '¡Hola! Quiero hacer un pedido:\n';
+            var urlfactura = '<?php echo base_url();?>index.php/Dpedido/Show?emp=<?php $get;?>';
             if(carrito.length > 0){
                 carrito.forEach(producto => {
                     var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
                     mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
+                    urlfactura += '&producto' + cont + '=' + $producto[1] + '&cantidad' + cont + '=' + producto[4];
+                    cont++;
                 });
-
+                urlfactura += '&total=' + total;
+                mensajeInicial += `\n` + urlfactura;
                 mensajeInicial += `\nTotal a pagar: ${total} Lps`;
                 var mensajeCodificado = encodeURIComponent(mensajeInicial);
                 var enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;

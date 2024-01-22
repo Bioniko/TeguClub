@@ -21,7 +21,7 @@
                             foreach ($cat as $cat) {
                                 if($cat){
                             ?>
-                            <button data-filter=".<?php echo  $cat->cat_nombre; ?>" style="margin-top: 1%"><?php echo  $cat->cat_nombre; ?></button>
+                            <button data-filter=".<?php echo  str_replace(' ', '', $cat->cat_nombre); ?>" style="margin-top: 1%"><?php echo  $cat->cat_nombre; ?></button>
                             <?php 
                                 }
                             }
@@ -40,7 +40,7 @@
                         $foto3 = base_url()."assets/uploads/files/".$ban->pro_foto3;
                         $foto4 = base_url()."assets/uploads/files/".$ban->pro_foto4;
                 ?>
-                <div class="col-lg-3 col-md-6 special-grid <?php echo  $ban->cat_nombre; ?>">
+                <div class="col-lg-3 col-md-6 special-grid <?php echo  str_replace(' ', '', $ban->cat_nombre); ?>">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">

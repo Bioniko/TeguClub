@@ -2414,6 +2414,14 @@
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
   }
+  @media (min-width: 300px) and (max-width: 500px) {
+    .imagen-contenedor .cerrar {
+        padding-top: 50%!important;
+    }
+    .slide-item img {
+        max-width: 100% !important;
+    }
+  }
   
   .imagen-contenedor img {
     margin: auto;
@@ -2430,7 +2438,7 @@
     font-size: 30px;
     color: #fff;
     cursor: pointer;
-    padding-top: 50%;
+    padding-top: 0%;
   }
 
 
@@ -2491,7 +2499,7 @@
 .slide-item img {
     display: block;
     height: auto;
-    max-width: 100%;
+    max-width: 50%;
 }
 .slide-control {
     background: rgba(0, 0, 0, 0.28);

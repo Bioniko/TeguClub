@@ -54,27 +54,26 @@
 <body>
     <div class="container">
         <div class="header">
+        <img src="<?php echo base_url();?>estilos/images/teguclub.png" style="width: 70%">
+        <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" style="width: 30%">
             <h1>Pedido</h1>
-            <p>Número de factura: 12345</p>
         </div>
-
-        <div class="details">
-            <p><strong>Cliente:</strong> Nombre del cliente</p>
-            <p><strong>Fecha:</strong> 22 de enero de 2024</p>
-        </div>
-
-        <div class="item">
-            <p><strong>Descripción:</strong> Producto 1</p>
-            <p><strong>Precio:</strong> $50.00</p>
-        </div>
-
-        <div class="item">
-            <p><strong>Descripción:</strong> Producto 2</p>
-            <p><strong>Precio:</strong> $30.00</p>
-        </div>
+        <?php 
+        for ($i=1; $i < 15; $i++) { 
+            if(isset($_GET['producto'.$i])){ 
+                ?>
+                <div class="details">
+                    <p><strong>Producto:</strong> <?php echo $_GET['producto'.$i];?></p>
+                    <p><strong>Cantidad:</strong> <?php echo $_GET['cantidad'.$i];?></p>
+                    <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $_GET['img'.$i];?>" style="width: 30%">
+                </div>
+                <?php 
+            }
+        }
+        ?>
 
         <div class="footer">
-            <p>Total: $80.00</p>
+            <p>Total: <?php echo $_GET['total'];?></p>
             <p>Gracias por su compra.</p>
         </div>
     </div>

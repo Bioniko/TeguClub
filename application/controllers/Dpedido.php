@@ -27,7 +27,7 @@ class Dpedido extends CI_Controller {
 	public function show()
 	{
 		try{
-			$emp = $this->db->query("SELECT * FROM empresa")->result();
+			$emp = $this->db->query("SELECT * FROM empresa WHERE emp_id = ".$_GET['emp'])->row();
 			$data = (object)array('emp' => $emp);
 			$this->load->view('2pedido.php',(array)$data);
 		}catch(Exception $e){

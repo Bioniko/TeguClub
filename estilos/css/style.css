@@ -2499,7 +2499,7 @@
 .slide-item img {
     display: block;
     height: auto;
-    max-width: 50%;
+    max-width: 30%;
 }
 .slide-control {
     background: rgba(0, 0, 0, 0.28);

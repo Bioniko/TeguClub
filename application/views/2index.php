@@ -178,22 +178,23 @@
         function enviarPedidoPorWhatsApp() {
             var numeroWhatsApp = <?php echo $whatsapp; ?>;
             var mensajeInicial = '¡Hola! Quiero hacer un pedido:\n';
-            
-            carrito.forEach(producto => {
-                var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
-                mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
-            });
+            if(carrito.length > 0){
+                carrito.forEach(producto => {
+                    var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
+                    mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
+                });
 
-            mensajeInicial += `\nTotal a pagar: ${total} Lps`;
-            var mensajeCodificado = encodeURIComponent(mensajeInicial);
-            var enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
-            window.open(enlaceWhatsApp, '_blank');
-            carrito = [];
-            var numero = document.getElementById('badge');
-            n = 0;
-            numero.textContent = "";
-            updateListaCarrito();
-            TotalPagar();
+                mensajeInicial += `\nTotal a pagar: ${total} Lps`;
+                var mensajeCodificado = encodeURIComponent(mensajeInicial);
+                var enlaceWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+                window.open(enlaceWhatsApp, '_blank');
+                carrito = [];
+                var numero = document.getElementById('badge');
+                n = 0;
+                numero.textContent = "";
+                updateListaCarrito();
+                TotalPagar();
+            }
         }
     </script>
 </body>

@@ -40,7 +40,7 @@
                         $foto3 = base_url()."assets/uploads/files/".$ban->pro_foto3;
                         $foto4 = base_url()."assets/uploads/files/".$ban->pro_foto4;
                 ?>
-                <div class="col-lg-3 col-md-6 special-grid <?php echo  str_replace(' ', '', $ban->cat_nombre); ?>">
+                <div class="col-lg-3 col-md-6 special-grid <?php echo  str_replace(' ', '', $ban->cat_nombre); ?>" style="cursor: pointer;">
                     <div class="products-single fix">
                         <div class="box-img-hover">
                             <div class="type-lb">

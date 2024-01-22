@@ -54,7 +54,7 @@
                                     <!-- <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li> -->
                                 </ul>
-                                <a class="carrito" onclick="AddCard('<?php echo $ban->pro_id; ?>', '<?php echo $ban->pro_nombre; ?>', '<?php echo $ban->pro_precio; ?>', '<?php echo $ban->pro_foto1; ?>')">Add to Cart</a>
+                                <a class="carrito" onclick="AddCard('<?php echo $ban->pro_id; ?>', '<?php echo $ban->pro_nombre; ?>', '<?php echo $ban->pro_precio; ?>', '<?php echo $ban->pro_foto1; ?>')">Agregar al Carrito</a>
                             </div>
                         </div>
                         <div class="why-text">

@@ -46,7 +46,7 @@
     <script src="<?php echo base_url();?>estilos/js/jquery.superslides.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/bootstrap-select.js"></script>
     <script src="<?php echo base_url();?>estilos/js/inewsticker.js"></script>
-    <script src="<?php echo base_url();?>estilos/js/bootsnav.js."></script>
+    <script src="<?php echo base_url();?>estilos/js/bootsnav.js"></script>
     <script src="<?php echo base_url();?>estilos/js/images-loded.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/isotope.min.js"></script>
     <script src="<?php echo base_url();?>estilos/js/baguetteBox.min.js"></script>

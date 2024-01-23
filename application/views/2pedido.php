@@ -66,14 +66,14 @@
                     <p><strong>Producto:</strong> <?php echo str_replace('_', ' ', $_GET['producto'.$i]);?></p>
                     <p><strong>Cantidad:</strong> <?php echo $_GET['cantidad'.$i];?></p>
                     <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $_GET['img'.$i];?>" style="width: 30%">
-                    <p><strong>Precio:</strong> <?php echo number_format($_GET['precio'.$i], 2, ',', '.');?></p>
+                    <p><strong>Precio:</strong> <?php echo number_format($_GET['precio'.$i], 2, '.', ',');?></p>
                 </div>
                 <?php 
             }
         }
         ?>
         <div class="footer">
-            <p>Total: <?php echo number_format($_GET['total'], 2, ',', '.');?></p>
+            <p>Total: <?php echo number_format($_GET['total'], 2, '.', ',');?></p>
             <p>Gracias por su pedido.</p>
         </div>
     </div>

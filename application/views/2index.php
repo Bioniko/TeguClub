@@ -182,9 +182,10 @@
             var urlfactura = '<?php echo base_url();?>index.php/Dpedido/Show?emp=<?php echo $_GET['emp'];?>';
             if(carrito.length > 0){
                 carrito.forEach(producto => {
-                    var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
-                    mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
-                    urlfactura += '&producto' + cont + '=' + producto[1] + '&cantidad' + cont + '=' + producto[4] + '&img' + cont + '=' + producto[3];
+                    //var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
+                    //mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
+                    mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n`;
+                    urlfactura += '&producto' + cont + '=' + str_replace(' ', '_', producto[1]); + '&cantidad' + cont + '=' + producto[4] + '&img' + cont + '=' + producto[3];
                     cont++;
                 });
                 urlfactura += '&total=' + total;

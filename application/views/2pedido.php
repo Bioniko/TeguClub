@@ -63,7 +63,7 @@
             if(isset($_GET['producto'.$i])){ 
                 ?>
                 <div class="details">
-                    <p><strong>Producto:</strong> <?php echo $_GET['producto'.$i];?></p>
+                    <p><strong>Producto:</strong> <?php echo str_replace('_', ' ', $_GET['producto'.$i]);?></p>
                     <p><strong>Cantidad:</strong> <?php echo $_GET['cantidad'.$i];?></p>
                     <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $_GET['img'.$i];?>" style="width: 30%">
                 </div>

@@ -185,7 +185,7 @@
                     //var urlImagen = '<?php echo base_url();?>assets/uploads/files/' + encodeURIComponent(producto[3]);
                     //mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n${urlImagen}\n`;
                     mensajeInicial += `${producto[1]} - Cantidad: ${producto[4]}\n`;
-                    urlfactura += '&producto' + cont + '=' + str_replace(' ', '_', producto[1]); + '&cantidad' + cont + '=' + producto[4] + '&img' + cont + '=' + producto[3];
+                    urlfactura += '&producto' + cont + '=' + producto[1].replace(/\s+/g, "_") + '&cantidad' + cont + '=' + producto[4] + '&img' + cont + '=' + producto[3];
                     cont++;
                 });
                 urlfactura += '&total=' + total;

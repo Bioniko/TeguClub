@@ -71,7 +71,6 @@
             }
         }
         ?>
-
         <div class="footer">
             <p>Total: <?php echo $_GET['total'];?></p>
             <p>Gracias por su compra.</p>

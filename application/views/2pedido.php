@@ -49,7 +49,7 @@
             }
         }
     </style>
-    <title>Factura</title>
+    <title>Pedido</title>
 </head>
 <body>
     <div class="container">

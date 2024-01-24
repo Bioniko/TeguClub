@@ -9,6 +9,20 @@ $titulo = $emp->emp_titulo;
 $titulo2 = $emp->emp_titulo2;
 ?>
 <head>
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYVEP4S4PG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DYVEP4S4PG');
+    </script>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 

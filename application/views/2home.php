@@ -33,6 +33,7 @@
     }
     .tamaniologo{
       width:70%;
+      min-height: 22vh;
     }
     a {
       color: #000 !important; 

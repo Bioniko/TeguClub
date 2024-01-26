@@ -82,13 +82,13 @@
     if($emp){
       if($emp->emp_id != 2){
   ?>
-  <div class="col col-md-3 col-lg-3" style="height: 10vh;">
+  <div class="col col-md-3 col-lg-3">
     <a class="w3-row-padding " href="<?php echo base_url();?>index.php/Dindex/Show?emp=<?php echo $emp->emp_id;?>">
       <div class="">
         <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo; ?>" alt="John" class="tamaniologo">
         <h3 style="color: #000"><?php echo $emp->emp_nombre;?></h3>
         <p class="w3-opacity" style="color: #000"></p>
-        <p style="color: #000"><?php echo $emp->emp_descripcion; ?></p>
+        <p style="color: #000: height: 10vh;"><?php echo $emp->emp_descripcion; ?></p>
         <p><button class="w3-button w3-light-grey w3-block">Ingresar</button></p>
       </div>
     </a>

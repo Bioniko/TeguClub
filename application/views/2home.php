@@ -88,7 +88,7 @@
         <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo; ?>" alt="John" class="tamaniologo">
         <h3 style="color: #000"><?php echo $emp->emp_nombre;?></h3>
         <p class="w3-opacity" style="color: #000"></p>
-        <p style="color: #000: height: 10vh;"><?php echo $emp->emp_descripcion; ?></p>
+        <p style="color: #000;height: 10vh;"><?php echo $emp->emp_descripcion; ?></p>
         <p><button class="w3-button w3-light-grey w3-block">Ingresar</button></p>
       </div>
     </a>

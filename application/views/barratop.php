@@ -133,9 +133,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
   <script>
     // Obtener el color inicial desde PHP (reemplazar por el valor real)
-    var colorInicial  = '#<?php echo $emp->bar_colorbarra; ?>';
-    var colorInicial3 = '#<?php echo $emp->bar_coloricom; ?>';
-    var colorInicial4 = '#<?php echo $emp->bar_coloricoc; ?>';
+    var colorInicial  = '<?php echo $emp->bar_colorbarra; ?>';
+    var colorInicial3 = '<?php echo $emp->bar_coloricom; ?>';
+    var colorInicial4 = '<?php echo $emp->bar_coloricoc; ?>';
 
     // Inicializar Spectrum con el color inicial
     $("#color-picker").spectrum({

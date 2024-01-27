@@ -20,7 +20,7 @@
                         foreach ($var as $emp) {
                             if($emp){
                         ?>
-                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>index.php/Dindex/Show?emp=<?php echo $emp->emp_id; ?>"><?php echo $emp->emp_menu; ?></a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>index.php/Dindex/Show?emp=<?php echo $emp->emp_id; ?>" style="color: #<?php echo $bar_coloricom;?>"><?php echo $emp->emp_menu; ?></a></li>
                         <?php
                             }
                         }
@@ -33,7 +33,7 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="side-menu"><a>
-						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;cursor: pointer;color: #<?php echo $bar_coloricom;?>"></i>
+						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;cursor: pointer;color: #<?php echo $bar_coloricoc;?>"></i>
                             <span class="badge otro" id="badge"></span>
 					</a></li>
                     </ul>

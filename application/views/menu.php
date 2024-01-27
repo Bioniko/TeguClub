@@ -36,6 +36,12 @@ if($per){
           <span>Producto</span>
         </a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="<?php echo base_url();?>index.php/Barratop/show">
+        <i class="fa-solid fa-palette"></i>
+          <span>Perzonalizar</span>
+        </a>
+    </li>
   </ul>
 </aside>
 <?php 

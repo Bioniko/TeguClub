@@ -7,6 +7,11 @@ $instagram =$emp->emp_instagram;
 $tiktok = $emp->emp_tiktok;
 $titulo = $emp->emp_titulo;
 $titulo2 = $emp->emp_titulo2;
+//CSS BARRA
+$bar_tamanioico = $emp->bar_tamanioico;
+$bar_colorbarra = $emp->bar_colorbarra;
+$bar_coloricom  = $emp->bar_coloricom;
+$bar_coloricoc  = $emp->bar_coloricoc;
 ?>
 <head>
 
@@ -36,7 +41,7 @@ $titulo2 = $emp->emp_titulo2;
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" type="image/x-icon" style="width: <?php echo $bar_tamanioico;?>px;">
     <link rel="apple-touch-icon" href="<?php echo base_url();?>estilos/images/apple-touch-icon.png">
     <!-- Agrega esto en el head de tu HTML -->
     <!-- Bootstrap CSS -->

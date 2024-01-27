@@ -1,12 +1,12 @@
  <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-default bootsnav" style="background-color: #<?php echo $bar_colorbarra;?>">
             <div class="container">
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" style="color: #<?php echo $bar_coloricom;?>"></i>
                 </button>
                     <a class="navbar-brand"><img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" style="width: 80px; " class="logo" alt=""></a>
                 </div>
@@ -33,7 +33,7 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="side-menu"><a>
-						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;cursor: pointer;"></i>
+						<i class="fa fa-shopping-bag" id="carritoIcon" style="font-size: 25px;position: relative;cursor: pointer;color: #<?php echo $bar_coloricom;?>"></i>
                             <span class="badge otro" id="badge"></span>
 					</a></li>
                     </ul>

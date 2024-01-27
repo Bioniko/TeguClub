@@ -8,7 +8,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars" style="color: #<?php echo $bar_coloricom;?>"></i>
                 </button>
-                    <a class="navbar-brand"><img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" style="width: 80px; " class="logo" alt=""></a>
+                    <a class="navbar-brand"><img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo;?>" style="width: <?php echo $bar_tamanioico;?>px; " class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 

@@ -145,7 +145,7 @@
       color: colorInicial,     // Establecer el color inicial
       change: function(color) {
         // Mostrar y actualizar el color en la caja de texto
-        $("#color-input").val(color.toHexString());
+        $("#color-input").val(color.toHexString().slice(1));
       }
     });
 
@@ -157,7 +157,7 @@
       color: colorInicial3,     // Establecer el color inicial
       change: function(color) {
         // Mostrar y actualizar el color en la caja de texto
-        $("#color-input3").val(color.toHexString());
+        $("#color-input3").val(color.toHexString().slice(1));
       }
     });
 
@@ -169,7 +169,7 @@
       color: colorInicial4,     // Establecer el color inicial
       change: function(color) {
         // Mostrar y actualizar el color en la caja de texto
-        $("#color-input4").val(color.toHexString());
+        $("#color-input4").val(color.toHexString().slice(1));
       }
     });
 

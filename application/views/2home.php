@@ -83,7 +83,7 @@
     if($emp){
       if($emp->emp_id != 2){
   ?>
-  <div class="col col-md-3 col-lg-3">
+  <div class="col-sm-6 col-md-3 col-lg-3">
     <a class="w3-row-padding " href="<?php echo base_url();?>index.php/Dindex/Show?emp=<?php echo $emp->emp_id;?>">
       <div class="">
         <img src="<?php echo base_url();?>assets/uploads/files/<?php echo $emp->emp_logo; ?>" alt="John" class="tamaniologo">

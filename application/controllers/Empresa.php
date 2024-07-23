@@ -42,6 +42,7 @@ class Empresa extends CI_Controller {
 				$crud->unset_read();
 			}
 			//DISPLAY
+			$crud->display_as('emp_id','ID');
 			$crud->display_as('emp_nombre','Nombre');
 			$crud->display_as('emp_logo','Logo');
 			$crud->display_as('emp_descripcion','Descripciòn');
@@ -54,17 +55,19 @@ class Empresa extends CI_Controller {
 			$crud->display_as('emp_tiktok','Tiktok');
 			$crud->display_as('emp_titulo','Titulo');
 			$crud->display_as('emp_titulo2','Descripción pagina');
+			$crud->display_as('emp_aislado','Aislado');
 			//THEME
 			$crud->set_theme('flexigrid');
 			//TABLA A LEER
 			$crud->set_table('empresa');
 			//CAMPOS A VISUALIZAR
 			if($_COOKIE['log_id'] == '2'){
-				$crud->add_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
-    			$crud->edit_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2');
+				$crud->add_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2', 'emp_aislado');
+    			$crud->edit_fields('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion','emp_titulo','emp_titulo2', 'emp_aislado');
 				$crud->set_relation('log_id','login','log_usuario');
+				$crud->field_type('emp_aislado','dropdown',array('No' => 'No', 'Si' => 'Si'));
 				//COLUMNAS A MOSTRAR
-				$crud->columns('log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion');
+				$crud->columns('emp_id', 'log_id','emp_nombre','emp_celular','emp_correo','emp_logo','emp_menu','emp_facebook','emp_instagram','emp_tiktok','emp_descripcion', 'emp_aislado');
 			}else{
 				//WHERE
 				$crud->where('emp_id', $_COOKIE['log_id']);

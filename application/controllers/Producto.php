@@ -41,6 +41,8 @@ class Producto extends CI_Controller {
 			$crud->display_as('cat_id','Categoria');
 			$crud->display_as('pro_precio','Precio');
 			$crud->display_as('emp_id','Empresa');
+			$crud->display_as('pro_activo','Estado');
+			
 			//THEME
 			$crud->set_theme('flexigrid');
 			//TABLA A LEER
@@ -48,10 +50,11 @@ class Producto extends CI_Controller {
 			//WHERE
 			$crud->where('producto.emp_id', $_COOKIE['log_id']);
 			//COLUMNAS A MOSTRAR
-			$crud->columns('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4');
+			$crud->columns('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4', 'pro_activo');
 			//CAMPOS A VISUALIZAR
-			$crud->add_fields('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4');
-    		$crud->edit_fields('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4');
+			$crud->add_fields('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4', 'pro_activo');
+    		$crud->edit_fields('pro_nombre', 'cat_id', 'pro_precio','pro_foto1','pro_foto2','pro_foto3','pro_foto4', 'pro_activo');
+			$crud->field_type('pro_activo','dropdown',array('No' => 'Deshabilitado', 'Si' => 'Habilitado'));
 			//SUBIR FOTO
 			$crud->set_field_upload('pro_foto1','assets/uploads/files');
 			$crud->set_field_upload('pro_foto2','assets/uploads/files');

@@ -35,12 +35,12 @@ class Dindex extends CI_Controller {
 				}
 			}
 			//===========================================================
-			$producto = 'SELECT * FROM producto p LEFT JOIN categoria c ON p.cat_id = c.cat_id WHERE p.emp_id = '.$_GET['emp'].' ORDER BY p.pro_fecha DESC';
-			$categoria = 'SELECT * FROM categoria WHERE emp_id = '.$_GET['emp'];
+			$producto = "SELECT * FROM producto p LEFT JOIN categoria c ON p.cat_id = c.cat_id WHERE p.pro_activo = 'Si' AND p.emp_id = ".$_GET["emp"]." ORDER BY p.pro_fecha DESC";
+			$categoria = "SELECT * FROM categoria WHERE emp_id = ".$_GET['emp'];
 			$cat = $this->db->query($categoria)->result();
 			$pro = $this->db->query($producto)->result();
 			$emp = $this->db->query("SELECT * FROM empresa WHERE log_id = ".$_GET['emp'])->row();
-			$var = $this->db->query("SELECT * FROM empresa WHERE log_id != 2")->result();
+			$var = $this->db->query("SELECT * FROM empresa WHERE log_id != 2 AND emp_aislado = 'No'")->result();
 			$data = (object)array('pro' => $pro, 'cat' => $cat, 'emp' => $emp, 'var' => $var);
 			$this->load->view('2index.php',(array)$data);
 		}catch(Exception $e){
